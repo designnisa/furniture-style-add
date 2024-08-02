@@ -1,0 +1,1500 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height: 100vh;
+}
+html,body{
+   scroll-behavior:smooth; 
+   overflow-x: hidden;
+}
+.container{
+    max-width:1440px;
+    position: relative;
+    padding: 0 15px;
+    margin:0 auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0 -15px;
+}
+.col-50{
+    max-width:50%;
+    flex:0 0 50%;
+    padding: 0 15px;
+}
+.col-30{
+    max-width:30%;
+    flex:0 0 30%;
+    padding: 0 15px;
+}
+.col-40{
+    max-width:40%;
+    flex:0 0 40%;
+    padding: 0 15px;
+}
+.col-20{
+    max-width: 20%;
+    flex:0 0 20%;
+    padding: 0 15px;
+}
+.col-25{
+    max-width: 25%;
+    flex:0 0 25%;
+    padding: 0 15px;
+}
+.col-100{
+    max-width: 100%;
+    flex:0 0 100%;
+    padding: 0 15px;
+}
+.col-33{
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+    padding: 0 15px;
+}
+img.logo{
+    max-width: 100%;
+    height: auto; 
+   padding: 10px;
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navpart{
+    display: flex;
+    position: relative;
+    transition: 0.5s ease;
+}
+.navpart li{
+    transition: 0.5s ease-in-out;
+}
+ul{
+    list-style: none;
+}
+.navpart li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 7px;
+    color: black;
+    font-size:24px;
+}
+.navpart select{
+    outline: none;
+    border:none;
+    background: transparent;
+}
+.button-part{
+    display: flex;
+    padding: 10px 0;
+}
+.button-part div{
+    padding: 0 10px;
+}
+.band-part{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+/* .navbar .row{
+    justify-content: space-between;
+} */
+#check, .header label{
+    display: none;
+}
+#check:checked ~ .navpart{
+    left: 0;
+}
+.log-part{
+    position: relative;
+    font-size:22px ;
+    text-transform:capitalize;
+    background: purple;
+    padding: 10px 14px;
+    border-radius: 20px;
+    outline: none;
+    color:white;
+    border: 1px solid purple;
+    cursor: pointer;
+    transition:color 0.6s linear;
+    z-index: 1;
+    overflow-x: hidden;
+}
+.log-part::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:gray;
+    transition:0.6s ease-in-out;
+    z-index: -1;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+
+}
+.log-part:hover::before{
+    transform: scaleX(1);
+}
+.navbar{
+    margin-bottom: 100px;
+}
+/* --------------------------------------------navbar-------------------------------------------------------------------- */
+.discover-class{
+    margin-top: 50px;
+}
+.discover-class h1{
+    text-transform:capitalize;
+    font-size: 50px;
+    font-family: "PT Serif", serif;
+}
+.just-line span{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+}
+img.image-part{
+    padding:8px 40px;;
+}
+.line-image{
+    margin-bottom: 78px;   
+}
+.just-line{
+    margin-bottom: 200px;
+}
+.discover-class button{
+    outline: none;
+    background: black;
+    color: white;
+    text-transform: capitalize;
+    padding: 17px 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.discover-part{
+    margin-bottom: 141px;
+}
+.demo-1{
+    position: relative;
+    width: 100%;
+}
+.demo-2{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.demo{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.part-1{
+    position: absolute;
+    top:8px;
+    left:13px;
+    background: rgb(197, 228, 241);
+    padding: 10px 12px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.part-2{
+    position: absolute;
+    top:8px;
+    left:13px;
+    background: rgb(218, 238, 187);
+    padding: 10px 12px;
+    border-radius: 30px; 
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.part-3{
+    position: absolute;
+    top:8px;
+    left:13px;
+    background: rgb(240, 209, 214);
+    padding: 10px 12px;
+    border-radius: 30px;
+    text-transform: capitalize;  
+    font-size: 19px;  
+}
+/* ------------------------------------------------------laset-furniture------------------------------------------------------------ */
+.collection-furniture-1 h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 31px;
+    font-family: "PT Serif", serif;
+}
+.collection-furniture-1{
+    width:100%;
+}
+.stylish-collection{
+    margin-bottom: 150px;
+    position: relative;
+}
+.stlish-part span{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+}
+div.line-image-1{
+    width: 100%;
+    margin-left:624px;
+    display: block;
+    position: absolute;
+    top:-19px;
+}
+.stlish-part{
+    position: relative;
+    margin-bottom: 72px;
+    width: 100%;
+}
+.ul{
+    list-style: none;
+}
+.header-part li a{
+    text-decoration: none;
+   
+}
+.header-part{
+ display: flex;
+ position: relative;
+ 
+}
+.header-part li a{
+    padding: 17px 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+    border-radius: 50px;
+    margin: 10px;
+}
+.header-type a{
+    background: black;
+    color: white;
+}
+.header-type-1 a{
+    background: rgb(199, 198, 198);
+    color: black;
+}
+.navbar-part{
+    margin-bottom: 50px;
+}
+.demo-pic img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.demo-name p{
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.price-track{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 16px;
+}
+.price-track p{
+    font-size: 26px;
+}
+.price-track span{
+    text-transform: capitalize;
+    background: rgb(225, 225, 246);
+    padding: 6px 8px;
+    border-radius: 30px;
+}
+.demo-part{
+    margin-bottom: 30px;
+}
+/* ----------------------------------------------------------collection-furniture-------------------------------------------------- */
+.updated-information{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.latest-trends-1 p{
+    text-transform: capitalize;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+}
+.latest-trends-1 h1{
+    text-transform: capitalize;
+    font-size: 39px;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+}
+.updated-information span{
+    text-transform: capitalize;
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+}
+.click{
+    width: 100%;
+}
+.click button{
+    padding: 22px 60px;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+.updated-information{
+    margin-bottom: 70px;
+}
+.band-add{
+    display: flex;
+}
+img.card-img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+.crad-part{
+    background:rgb(247, 246, 244);
+    padding: 13px 30px;
+}
+.crad-part p{
+    text-transform: capitalize;
+    font-size: 23px;
+    margin-bottom: 19px;
+    font-family: "Roboto", sans-serif;
+}
+.crad-part span{
+    font-size: 27px;
+    text-transform: capitalize;
+    font-family: "PT Serif", serif;
+    font-weight:600;
+}
+.types-furniture{
+    font-size: 12px;
+    text-transform: lowercase;
+    margin-top: 15px;
+}
+.band-man{
+    max-width:100%;
+    height:auto;
+}
+.name-date{
+    margin-left: 10px; 
+}
+.name-date span{
+    font-size: 17px;
+}
+.arrow{
+    margin-top: 50px;
+    width: 100%;
+}
+.latest-trends{
+    margin-bottom: 100px;
+}
+/* ------------------------------------------latest-trends------------------------------------------------------------------ */
+img.band-ambasiter{
+/* width:100%; */
+max-width: 100%;
+height: auto;
+}
+.enjoy-latest-part{
+    margin-top: 50px;
+}
+.enjoy-latest-part h2{
+    font-size: 37px;
+    font-family: "PT Serif", serif;
+    text-transform: capitalize;
+}
+.vector{
+    position: absolute;
+    left: 37%;
+    top: 70px;
+}
+.enjoy-latest-part p{
+    margin-top: 33px;
+    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+}
+.diffrent-part{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.quality p{
+    font-size: 34px;
+    text-transform: capitalize;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+    margin-bottom: 29px;
+}
+.quality span{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+}
+.style p{
+    font-size: 34px;
+    text-transform: capitalize;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+}
+.style span{
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+}
+.ellipse{
+    position: relative;
+    top: -11%;
+    left: 27%;
+}
+.ellipse-1{
+    position: absolute;
+}
+.button{
+   position: relative; 
+   margin-top: 87px;
+   right: -70%;
+   padding: 17px 36px;
+   font-size: 21px;
+   text-transform: capitalize;
+   background: black;
+   color: white;
+   cursor:pointer;
+}
+.latest-fashion{
+    margin-bottom: 200px;
+}
+/* ----------------------------------------------------------------latest-fashion------------------------------------------------ */
+.band-ambasiter{
+    max-width: 100%;
+    height: auto;
+}
+.our-customer{
+    margin-top: 140px;
+}
+.our-customer p{
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.our-customer h3{
+    font-size: 50px;
+    font-family: "PT Serif", serif;
+    text-transform:capitalize;
+    color:rgb(186, 60, 186) ;
+    margin-bottom: 17px;
+}
+.our-customer  span{
+    font-size: 26px;
+    color:rgb(186, 60, 186) ;
+    font-family: "Roboto", sans-serif;
+}
+.customer-review{
+    margin-top: 60px;
+}
+.customer-review-part{
+    display: flex;
+}
+.customer-review-part-1{
+    margin-top: 70px;
+    display: flex;
+}
+.percentage{
+    padding: 0 30px;
+}
+.percentage p{
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+}
+.percentage-1{
+    padding: 0 50px;
+}
+.percentage-1 p{
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+    font-weight: 600;
+}
+.percentage span{
+ font-size: 26px;
+ font-family: "Roboto", sans-serif;
+}
+.percentage-1 span{
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+   }
+.successful-history{
+    margin-bottom: 100px;
+}
+/* -------------------------------------------------------customer-review---------------------------------------------------- */
+.information p{
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 25px;
+    margin-bottom: 28px;
+}
+.footer-part{
+    background: rgb(210, 219, 223);
+}
+.information{
+    margin-top: 70px;
+}
+.email-part{
+    padding: 12px 37px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 1px solid gray;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.subscibe{
+    outline: none;
+    border: 1px solid gray;
+    padding: 13px 40px;
+    border-radius: 60px;
+    margin-left: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.subscibe-part{
+    margin-bottom: 20px;
+}
+.information span{
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+ul{
+    list-style: none;
+}
+ul.footer-menu li a{
+    display: block;
+    text-decoration: none;
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: gray;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.child-footer{
+    margin-top: 70px;
+}
+.child-footer p{
+     font-size: 29px;
+     font-family: "PT Serif", serif;
+     text-transform: capitalize;
+     font-weight: 600;
+     margin-bottom: 16px;
+}
+.web-site{
+    margin-right: 22px ;
+}
+.types-of-site{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.types-of-site p{
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+.type-service{
+    display: flex;
+}
+.policy{
+    padding: 0 15px;
+}
+.policy span{
+    font-size:24px ;
+    font-family: "Roboto", sans-serif;
+}
+/* ----------------------------------------------footer-part---------------------------------------------------------- */
+/* --------------------------------------------------media-qurey------------------------------------------------------------ */
+@media(max-width:1400px){
+    .vector{
+        left:39%;
+    }
+}
+@media(max-width:1366px){
+    .just-line {
+        margin-bottom: 162px;
+    }
+    .vector{
+        left:38%;
+    }
+    .enjoy-latest-part h2 {
+        font-size: 34px;
+    }
+    .crad-part span {
+        font-size: 22px;
+    }
+}
+@media(max-width:1200px){
+    .navpart li a{
+        font-size: 19px;
+    }
+    .log-part{
+        padding: 7px 14px;
+    }
+    div.line-image-1{
+        margin-left: 535px;
+        top:-30px;
+    }
+    .just-line {
+        margin-bottom: 81px;
+    }
+    .button {
+        margin-top: 50px;
+        right: -61%;
+    }
+    .discover-class {
+        margin-top: 8px;
+    }
+    .header-part li a {
+        padding: 10px 26px;
+    }
+    .enjoy-latest-part h2 {
+        font-size: 29px;
+    }
+    .enjoy-latest-part {
+        margin-top: -23px;
+    }
+    .quality span {
+        font-size: 23px;
+    }
+    .style span {
+        font-size: 23px;
+    }
+    .child-footer p {
+        font-size: 19px;
+    }
+    .email-part{
+     padding: 10px 9px;
+    }
+    .subscibe{
+        padding:11px 13px;
+        font-size: 18px;
+    }
+    ul.footer-menu li a{
+        font-size: 25px;
+    }
+    .discover-class h1{
+        font-size: 44px;
+    }
+    .stlish-part h2 {
+        font-size: 44px;
+    }
+    .crad-part span {
+        font-size: 28px;
+    }
+    .crad-part p {
+        font-size: 22px;
+    }
+    .name-date span{
+        font-size:18px;
+    }
+    .latest-fashion {
+        margin-bottom: 135px;
+    }
+    .vector {
+        top: -7px;
+        left: 41%;
+    }
+} 
+@media(max-width:1024px){
+    .header-part li a {
+        padding: 10px 16px;
+        margin: 3px;
+    }
+    .just-line {
+        margin-bottom: 94px;
+    }
+    .crad-part {
+        padding: 12px 15px;
+    }
+}  
+@media(max-width:991px){
+    .navpart{
+        position: fixed;
+        display: flex;
+        background: purple;
+        align-items: center;
+        flex-direction: column;
+        top:11%;
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 13%);
+        left:-100%;
+        z-index: 1;
+    }
+    .navpart li {
+        border:1px solid white;
+        margin: 20px 0;
+        border-radius: 30px;
+        padding: 10px 30px;
+        color: white;
+    }
+    .header label{
+        display: block;
+    }
+    .fa-bars{
+        position: absolute;
+        color: blueviolet;
+        right:183px;
+        top:8px;
+        font-size: 40px;
+    }
+    .demo-pic-1{
+        padding: 10px 0;
+    }
+    .demo-name p{
+        font-size: 21px;
+    }
+    .navbar {
+        margin-bottom: 51px;
+    }
+    .col-25{
+        max-width: 50%;
+        flex:0 0 50%;
+    }
+    .discover-class {
+        margin-top: 0;
+        text-align: center;
+    }
+    .discover-class h1 {
+        font-size: 41px;
+    }
+    .col-50{
+        max-width:100%;
+        flex:0 0 100%;
+    }
+    img.band-ambasiter {
+        width: 100%;
+    }
+    .just-line span {
+        font-size: 25px;
+    }
+    .part-1{
+        top:50px;
+        left:39px;
+        font-size: 31px;
+    }
+    .part-2{
+        top: 50px;
+        left: 39px;
+        font-size: 31px;
+    }
+    .part-3{
+        top: 10px;
+        left: 31px;
+        font-size: 31px;
+    }
+    div.line-image-1 {
+        margin-left: 506px;
+    }
+    .line-image {
+        margin-bottom: 56px;
+    }
+    .discover-class button {
+        margin-bottom: 83px;
+        font-size: 23px;
+    }
+    .demo-2{
+        margin-top: 10px;
+    }
+    .demo-1{
+        padding: 10px 0;
+    }
+    .just-line {
+        margin-bottom: 82px;
+    }
+    .our-customer {
+        margin-top: 61px;
+        text-align: center;
+    }
+    .customer-review-part{
+        text-align: center;
+        justify-content: center;
+    }
+    .customer-review-part-1 {
+        text-align: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .information span {
+        font-size: 15px;
+    }
+    .types-of-site{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 38px;
+        margin-bottom: 51px
+    }
+    .type-service{
+        justify-content: center;
+    }
+    .col-40{
+        max-width: 100%;
+        flex:0 0 100%;
+    }
+    .col-20{
+        max-width: 100%;
+        flex:0 0 100%;
+    }
+    .child-footer p {
+        font-size: 33px;
+    }
+    ul.footer-menu li a {
+        font-size: 30px;
+    }
+    .child-footer {
+        margin-top: 54px;
+    }
+    .col-33{
+        max-width:100%;
+        flex:0 0 100%;
+    }
+    .crad-part span {
+        font-size: 40px;
+    }
+    .crad-part p {
+        font-size: 23px;
+    }
+    .name-date p{
+        font-size: 17px;
+    }
+    .name-date span{
+        font-size:24px;
+    }
+    .enjoy-latest-part {
+        margin-top: 46px;
+    }
+    .card-holder{
+        padding: 5px 0;
+    }
+    .vector {
+        left: 39%;
+        top: 72px;
+    }
+    .button{
+        margin-bottom: 40px;
+    }
+    .latest-fashion {
+        margin-bottom: 46px;
+    }
+    .latest-trends {
+        margin-bottom: 22px;
+    }
+    .our-customer h3 {
+        font-size: 43px;
+    }
+    .stylish-collection {
+        margin-bottom: 104px;
+    }
+    .discover-part {
+        margin-top: 100px;
+        margin-bottom: 37px;
+    }
+    .price-track span{
+        font-size: 19px;
+    }
+    .price-track p{
+     font-size: 24px;
+     font-weight: 600;
+    }
+    .diffrent-part{
+        flex-direction: column;
+        margin-top: 32px;
+    }
+    .updated-information{
+        flex-direction: column;
+    }
+    .click{
+        text-align: center;
+        margin-top: 86px;
+    }
+    .crad-part p {
+        margin-bottom: 33px;
+        font-size: 26px;
+    }
+    .types-furniture {
+      margin-top: 33px;
+    }
+    .button{
+        right: -39%;
+        font-size: 22px;
+    }
+    .quality span{
+        font-size: 25px;
+    }
+    .enjoy-latest-part p {
+        font-size: 25px;
+    }
+    .style span{
+        font-size: 25px;
+    }
+    .quality p {
+        font-size: 32px;
+    }
+    .quality{
+        margin-bottom: 50px;
+    }
+    .style p{
+        font-size: 32px;
+    }
+    .ellipse {
+        top: -16px;
+        left: 8%;
+    }
+    .email-part {
+        padding: 17px 41px;
+        font-size: 20px;
+    } 
+    .subscibe {
+        padding: 17px 33px;
+        font-size: 20px;
+    }
+    .information p {
+        font-size: 26px;
+    }
+    .information span {
+        font-size: 23px;
+    }
+    .types-of-site p {
+        font-size: 21px;
+    }
+    .policy span {
+        font-size: 21px;
+    }
+}
+@media(max-width:800px){
+    .fa-bars{
+        right: 171px;
+    }
+    .header-part li a{
+        margin: 5px;
+        font-size: 17px;
+    }
+    .just-line span {
+        font-size: 27px;
+    }
+    .discover-class button {
+        font-size: 29px;
+    }
+    .stlish-part span {
+        font-size: 29px;
+    }
+    .demo-name p {
+        font-size: 24px;
+    }
+    .price-track span {
+        font-size: 25px;
+    }
+    .price-track p {
+        font-size: 30px;
+    }
+    .name-date span {
+        font-size: 24px;
+    }
+    .button {
+        font-size: 29px;
+    }
+    .our-customer span {
+        font-size: 28px;
+    }
+    .percentage span {
+        font-size: 25px;
+    }
+     .percentage-1 span {
+    font-size: 25px;
+     }
+    .information p {
+        font-size: 30px;
+    }
+    .information span {
+        font-size: 30px;
+    }
+    .types-of-site p {
+        font-size: 25px;
+    }
+    .policy span {
+        font-size: 25px;
+    }
+    .email-part {
+        font-size: 24px
+    }
+    .subscibe {
+        font-size: 24px;
+    }
+}
+@media(max-width:768px){
+    .fa-bars {
+        right: 87px;
+    }
+    .part-1 {
+      top: 32px;
+      left: 39px;
+    }
+     .part-2 {
+        top: 32px;
+        left: 39px; 
+    } 
+    .click button{
+        font-size: 22px;
+        padding: 17px 39px;
+    }
+    .button {
+        font-size: 22px;
+        padding: 17px 39px;
+        right: -39%;
+    }
+    .price-track p {
+        font-size: 27px;
+    }
+    .price-track span {
+        padding: 5px 8px;
+        font-size: 22px;
+    }
+    .discover-class button {
+        font-size: 23px;
+        padding: 16px 14px;
+    }
+    .information p {
+        font-size: 24px;
+    }
+    .information span {
+        font-size: 24px;
+    }
+    .style span {
+        font-size: 25px;
+    }
+    .quality span {
+        font-size: 25px;
+    }
+    .stlish-part h2 {
+        font-size: 37px;
+    }
+    div.line-image-1 {
+        margin-left: 425px;
+    }
+    .header-part li a {
+        padding: 6px 3px;
+        font-size: 16px;
+    }
+    .demo-name p {
+        font-size: 26px;
+    }
+    .updated-information span {
+        font-size: 21px;
+    }
+    .our-customer h3 {
+        font-size: 36px;
+    }
+    .percentage p {
+        font-size: 33px;
+    }
+    .percentage span {
+        font-size: 22px;
+    }
+    .percentage-1 p{
+        font-size: 33px;
+    }
+    .percentage-1 span{
+        font-size: 22px;
+    }
+    .col-25{
+        max-width:100%;
+        flex:0 0 100%;
+    }
+}
+@media(max-width:600px){
+    .fa-bars {
+        right: 69px;
+    }
+    .vector {
+        left: 68%;
+    }
+    .ellipse {
+        left: 13%;
+    }
+}
+@media(max-width:575px){
+    .fa-bars {
+        right: 17px;
+    }
+    div.line-image-1 {
+        margin-left: 273px;
+        top:-30px;
+    }
+    .discover-class button {
+        font-size: 22px;
+    }
+    .discover-class h1 {
+        font-size: 29px;
+    }
+    .just-line span {
+        font-size: 22px;
+    }
+    .stlish-part h2 {
+        font-size: 29px;
+    }
+    .stlish-part span {
+        font-size: 20px;
+    }
+    .header-part li a{
+        font-size: 13px;
+    }
+    div.line-image-1 {
+        margin-left: 261px;
+    }
+    .updated-information span {
+        font-size: 20px;
+    }
+    .crad-part span {
+        font-size: 23px;
+    }
+    .name-date span{
+        font-size: 16px;
+    }
+    .crad-part p {
+        font-size: 15px;
+    }
+    .enjoy-latest-part h2 {
+        font-size: 28px;
+    }
+    .vector {
+        left: 80%;
+        top:55px;
+    }
+    .enjoy-latest-part p{
+        font-size: 22px;
+    }
+    .button {
+        right:-30%;
+    }
+    .our-customer h3 {
+        font-size: 31px;
+    }
+    .our-customer span {
+        font-size: 14px;
+    }
+    .subscibe{
+        padding: 16px 14px;
+        font-size: 16px;
+    }
+    .crad-part p {
+        margin-bottom:19px;
+        font-size: 20px;
+    }
+    .types-furniture {
+        margin-top: 15px;
+    }
+    .policy span {
+        font-size: 21px;
+    }
+    .policy {
+        padding: 0 7px;
+    }
+    .types-of-site p {
+        font-size: 22px;
+    }
+}
+@media(max-width:480px){
+    img.logo {
+        padding: 5px;
+    }
+    .log-part {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    .part-1 {
+        top: 24px;
+        left: 29px;
+    }
+    .part-2 {
+        top: 24px;
+        left: 29px;
+    }
+    .our-customer span {
+        font-size: 19px;
+    }
+    .part-3 {
+        top: 7px;
+        left: 14px;
+    }
+    .header-part li a {
+        font-size: 10px;
+    }
+    .demo-pic-1{
+        padding: 5px 0;
+    }
+    .discover-class button {
+        margin-bottom: 40px;
+    }
+    .stlish-part span {
+        font-size: 19px;
+    }
+    .updated-information span {
+        font-size: 19px;
+    }   
+    .just-line {
+        margin-bottom: 68px;
+    }
+    .stlish-part h2 {
+        font-size: 26px;
+    }
+    .line-image {
+        margin-bottom: 40px;
+    }
+    .policy span {
+        font-size: 19px;
+    }
+    .policy {
+        padding: 0px 6px;
+    }
+    .arrow {
+        margin-top: 19px;
+    }
+    .enjoy-latest-part {
+        margin-top: 30px;
+    }
+    .successful-history {
+        margin-bottom: 42px;
+    }
+    .discover-class button {
+        font-size: 16px;
+    }
+    .email-part {
+        padding: 16px 6px;
+    }
+    .ellipse {
+        left: 16%;
+    }
+    .updated-information {
+        margin-bottom: 41px;
+    }
+    .subscibe {
+        padding: 13px 6px;
+        font-size: 15px;
+    }
+    .email-part {
+        font-size: 17px;
+    }
+}
+@media(max-width:420px){
+    .part-1 {
+        top: 17px;
+        left: 19px;
+        font-size: 18px;
+    }
+    .part-2 {
+        top: 17px;
+        left: 19px;
+        font-size: 18px;
+    }
+    .part-3 {
+        top: 7px;
+        left: 15px;
+        font-size: 18px;
+    }
+    .stlish-part h2 {
+        font-size: 30px;
+    }
+    div.line-image-1 {
+        margin-left: 187px;
+    }
+    .stlish-part span {
+        font-size: 19px;
+    }
+    .header-part li a {
+        font-size: 9px;
+        margin: 3px;
+    }
+    .stlish-part {
+        margin-bottom: 53px;
+    }
+    .latest-trends-1 h1 {
+        font-size: 29px;
+    }
+    .updated-information span {
+        font-size: 19px;
+    }
+    .crad-part span {
+        font-size: 23px;
+    }
+    .crad-part p {
+        font-size: 18px;
+    }
+    .name-date span{
+        font-size: 18px;
+    }
+    .stylish-collection {
+        margin-bottom: 61px;
+    }
+    .email-part {
+        padding: 9px 2px;
+    }
+    .subscibe{
+        margin-left: 5px;
+    }
+    .button {
+        right: -26%;
+    }
+    .click {
+        margin-top: 49px;
+    }
+    .quality p {
+        font-size: 27px;
+    }
+    .style p {
+        font-size: 27px;
+    }
+    .ellipse{
+        left: 18%;
+    }
+    .policy span {
+        font-size: 17px;
+    }
+    .crad-part {
+        padding: 14px 16px;
+    }
+    .enjoy-latest-part h2 {
+        font-size: 23px;
+    }
+    .button {
+        padding: 13px 18px;
+    }
+    .click button {
+        padding: 13px 18px;
+    }
+    .child-footer p {
+        font-size: 25px;
+    }
+    ul.footer-menu li a {
+        font-size: 24px;
+    }
+    .demo-name p {
+        font-size: 25px;
+    }
+}
+@media(max-width:375px){
+    .fa-bars {
+        right: -4px;
+        font-size: 28px;
+    }
+    div.line-image-1 {
+        margin-left: 175px;
+    }
+    .header-part li a {
+        font-size: 8px;
+    }
+    .latest-trends-1 h1 {
+        font-size: 24px;
+    }
+    .information span {
+        font-size: 21px;
+    }
+    .quality span {
+        font-size: 20px;
+    }
+    .style span {
+        font-size: 20px;
+    }
+    .enjoy-latest-part h2 {
+        font-size: 21px;
+    }
+    .enjoy-latest-part p {
+        font-size: 20px;
+    }
+    .price-track p {
+        font-size: 23px;
+    }
+    .demo-name p {
+        font-size: 19px;
+    }
+    .quality{
+        padding: 8px 0;
+    }
+    .information span {
+        font-size: 16px;
+    }
+    .information p {
+        font-size: 18px;
+    }
+    .information {
+        margin-top: 29px;
+    }
+    .email-part{
+        font-size: 15px;
+    }
+    .policy span {
+        font-size: 14px;
+    }
+    .types-of-site p {
+       font-size: 16px;
+    }
+    .percentage span {
+        font-size: 15px;
+    }
+    .percentage-1 span {
+        font-size: 15px;
+    }
+    .latest-fashion {
+        margin-bottom: 13px;
+    }
+    .subscibe {
+        padding: 11px 14px;
+    }
+}
+@media(max-width:320px){
+    .button {
+        right: -32%;
+    }
+    .stlish-part span {
+        font-size: 19px;
+    }
+    .information span {
+        font-size: 16px;
+    }
+    .header-part li a {
+        font-size: 8px;
+    }
+    .policy {
+        padding: 0px 6px;
+    }
+    .policy span {
+        font-size: 14px;
+    }
+    .crad-part{
+        padding: 13px 5px;
+    }
+    .stlish-part h2 {
+      font-size: 19px;
+    }
+    .updated-information span {
+        font-size: 14px;
+    }
+    .crad-part p {
+        font-size: 14px;
+    }
+    div.line-image-1 {
+        margin-left: 154px;
+        top:-37px;
+    }
+    .button {
+        right: -25%;
+    }
+    .vector {
+        left: 65%;
+    }
+}
